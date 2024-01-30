@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation technique</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+
+        body {
+            background-color: #fffff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+		   font-family: 'Votre Police', arial; 
+        }
+
+        h1 {
+            color: #054389;
+		   font-family: 'Votre Police', arial; 
+        }
+
+
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #054389;
+            color: white;
+            border: none;
+            cursor: pointer;
+		   font-family: 'Votre Police', arial; 
+        }
+
+  /* Style pour le bouton home */
+        .home-button {
+            position: fixed; /* Position fixe pour rester en haut */
+            top: 20px;
+            left: 20px;
+            color: #054389; /* Couleur de votre choix */
+            font-size: 24px; /* Taille de police de votre choix */
+            text-decoration: none;
+
+    </style>
+
+</head>
+<body>
+<button id="homeButton" style="background-color: #054389; color: white; padding: 10px; border: none; border-radius: 5px;">
+        <i class="fas fa-home"></i> RETOUR AU CALCUL
+    </button>
+
+    <h1>Documentation technique</h1>
+
+
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:b:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/Annuaire%20Vinci%20Facilities%20vf%20NL%20.pdf?csf=1&web=1&e=Pc9JLF')">Annuaire</button>
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:f:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/Agences%20Groupama%2061?csf=1&web=1&e=FYzVbD')">Agences Groupama 61</button>
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:f:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/CFA?csf=1&web=1&e=UzvaDs')">Documentation CFA</button>
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:f:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/DOCUMENTATION%20TECHNIQUE?csf=1&web=1&e=7SrPEn')">Documentations techniques diverses</button>
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:f:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/ASTREINTE?csf=1&web=1&e=cpgEdD')">Documentation sites d'astreinte</button>
+
+    <button onclick="redirectToExternalURL('https://vincienergies.sharepoint.com/:f:/r/sites/ttc-VF_NL/Documents%20partages/TECHNICIENS/ASTREINTE?csf=1&web=1&e=cpgEdD')"> Planning d'astreinte</button>
+
+    <script>
+ document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+     });
+
+        function redirectToExternalURL(url) {
+            window.location.href = url;
+
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+
